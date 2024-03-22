@@ -6,6 +6,7 @@ import { UserModule } from './user/user.module';
 import { AuthJwtModule } from './auth-jwt/auth-jwt.module';
 import { SendMailModule } from './send-mail/send-mail.module';
 import { NotificationModule } from './notification/notification.module';
+import { ChatModule } from './chat/chat.module';
 
 @Module({
   imports: [
@@ -14,7 +15,8 @@ import { NotificationModule } from './notification/notification.module';
     UserModule,
     AuthJwtModule,
     SendMailModule,
-    NotificationModule
+    NotificationModule,
+    ChatModule
   ],
   controllers: [],
   providers: []
