@@ -58,6 +58,22 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Variables de entorno
+
+Variables que deben ir en el .env en la carpeta raiz
+
+```bash
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=postgres
+DB_PASS=admin
+DB_NAME=ejemplo
+DB_DIALECT=postgres
+PORT=3000
+HASH_SALT= 10
+JWT_SECRET=qweuioewqashfdjksa
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).

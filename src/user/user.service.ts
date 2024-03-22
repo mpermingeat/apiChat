@@ -107,4 +107,12 @@ export class UserService {
     // Devolver el usuario eliminado
     return await this.findOne(id);
   }
+
+  public async getByEmail(email: string): Promise<UserEntity> {
+    const user = await this.userRepository.findOne({ where: { email } });
+    if (!user) {
+      throw new HttpException(`Evento con ID ${email} no encontrado`, 404);
+    }
+    return user;
+  }
 }

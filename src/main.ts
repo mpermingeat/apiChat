@@ -19,6 +19,8 @@ async function bootstrap() {
     })
   ); //con este global pipe puedo utilizar los dto a traves del ValidationPipe
 
+  app.setGlobalPrefix('api');
+
   const configService = app.get(ConfigService); //para usar variable de entorno
 
   await app.listen(+configService.get('PORT') || 3000);
